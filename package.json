@@ -1,0 +1,25 @@
+{
+  "name": "node-experiments",
+  "version": "1.0.0",
+  "description": "Jude's Experiments!",
+  "main": "site/main.js",
+  "dependencies": {
+    "async": "^1.5.2",
+    "bunyan": "^1.5.1",
+    "express": "^4.13.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/judemorrissey/node-experiments.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/judemorrissey/node-experiments/issues"
+  },
+  "homepage": "https://github.com/judemorrissey/node-experiments#readme"
+}
