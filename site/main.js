@@ -4,7 +4,7 @@
     Requires
 *******************************************************************/
 
-var express = require('express'); // HTTP interface
+var feathers = require('feathers'); // Express.js wrapper
 var bunyan = require('bunyan'); // logging
 var minimist = require('minimist'); // command line arg parsing
 
@@ -41,14 +41,14 @@ log.debug('Debug mode activated.');
     HTTP Interface
 *******************************************************************/
 
-var app = express();
+var app = feathers();
 
 app.use((req, res, next) => {
     log.debug('handling request:', req.url);
     return next();
 });
 
-app.use('/static', express.static(__dirname + '/static'));
+app.use('/static', feathers.static(__dirname + '/static'));
 
 app.get('/', (req, res) => {
     return res.end('HELLO');
